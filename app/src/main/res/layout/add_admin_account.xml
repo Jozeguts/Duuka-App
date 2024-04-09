@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingTop="26dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="ADD ADMINISTRATOR ACCOUNT" />
+
+    <!-- Duuka Logo -->
+    <ImageView
+        android:layout_width="166dp"
+        android:layout_height="149dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/duuka_logo" />
+
+    <!-- Eduuka Text -->
+    <TextView
+        android:id="@+id/eduuka_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:text="Add Administartor Account"
+        android:textColor="@color/blue"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <!-- User Input Fields: Email, Password, Confirmation -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:drawablePadding="?android:attr/scrollbarSize"
+            android:inputType="textEmailAddress"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:drawablePadding="?android:attr/scrollbarSize"
+            android:inputType="textPassword"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <EditText
+            android:id="@+id/confirm_password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:drawablePadding="?android:attr/scrollbarSize"
+            android:inputType="textPassword"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/login_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/confirm_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ADD ACCOUNT"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

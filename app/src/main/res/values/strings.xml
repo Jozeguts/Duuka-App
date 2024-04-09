@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DUUKA APP</string>
+    <string name="payment_done">Payment Done</string>
+    <string name="default_web_client_id">AIzaSyBxqdVKLm2sJHSw9Pr2kbNU9OUnl9sl1h4</string>
+    <string name="password">Password</string>
+
+</resources>

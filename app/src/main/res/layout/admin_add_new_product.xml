@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="ADD NEW PRODUCT" />
+
+        <!-- Header -->
+
+
+        <!-- Product Title -->
+        <TextView
+            android:id="@+id/product_title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Product Title"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_title_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/product_title_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Title"
+                android:background="#ffe4b5"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Short Description -->
+        <TextView
+            android:id="@+id/short_description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Short Description"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/short_description_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/short_description_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Short Description"
+                android:background="#ffe4b5"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:minLines="3"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Product Brief -->
+        <TextView
+            android:id="@+id/product_brief_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Product Brief"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_brief_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/product_brief_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Brief"
+                android:background="#ffe4b5"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="5"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/product_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Product Price"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_price_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/product_price_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Price"
+                android:background="#ffe4b5"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/product_quantity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Product Quantity"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_quantity_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/product_quantity_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Price"
+                android:background="#ffe4b5"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Upload Product Images -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ffe4b5"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="103dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_add_image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Upload The Product Images"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Add Product Button -->
+        <TextView
+            android:id="@+id/tvAddProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_button"
+            android:clickable="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="ADD PRODUCT"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

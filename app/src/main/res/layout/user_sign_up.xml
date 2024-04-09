@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingTop="6dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#74269B"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Sign Up" />
+
+    <!-- Duuka Logo -->
+    <ImageView
+        android:layout_width="166dp"
+        android:layout_height="149dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/duuka_logo" />
+
+    <!-- Eduuka Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="monospace"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- User Input Fields: Email, Password, Confirmation -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:drawablePadding="?android:attr/scrollbarSize"
+            android:inputType="textEmailAddress"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:drawablePadding="?android:attr/scrollbarSize"
+            android:inputType="textPassword"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnUserSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_button"
+        android:paddingStart="6dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="6dp"
+        android:text="SIGN UP"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <!-- Login Options: Existing Account or Google Login -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Already have an account? "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="#0000ff"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Left horizontal line -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/black" />
+
+        <!-- Text "or" in the middle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="8dp"/>
+
+        <!-- Right horizontal line -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+
+    <!-- Button with Google Image -->
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:drawableLeft="@drawable/google_image"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textStyle="bold"
+
+        android:text="Log in with Google"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:id="@+id/btnGoogleSignIn"/>
+
+</LinearLayout>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/duuka_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/duuka_logo" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Admin Dashboard"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- New and Pending Orders Counts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="16dp">
+
+        <!-- Text views for new and pending orders counts -->
+        <TextView
+            android:id="@+id/new_orders_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Orders: 1000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pending_orders_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending Orders: 500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Buttons Section 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:background="@drawable/border"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="5dp">
+
+        <!-- Button styles -->
+        <Button
+            android:id="@+id/add_product_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Add Product"
+                        android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/remove_product_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Remove Product"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/view_product_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="View Product"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Buttons Section 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/border"
+        android:gravity="center_vertical">
+
+        <!-- Button styles -->
+        <Button
+            android:id="@+id/add_admin_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Add Admin"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/remove_admin_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Remove Admin"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/view_users_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="View Users"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/remove_user_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Remove User"
+            android:textColor="@color/black"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/gotoHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_weight="1"
+        android:text="Exit Admin Mode"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/orders_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/iphone_14_pro_max"
+                android:layout_marginEnd="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apple iPhone 14 Pro Max 256GB"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/productPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UGX 5,000,000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <!-- Delete Icon -->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/delete_icon"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Remove"
+                android:layout_gravity="center_vertical"
+                android:textAllCaps="false"
+                android:textSize="25dp"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/minusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textSize="35sp"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/quantityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="30dp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:paddingHorizontal="8dp" />
+
+            <Button
+                android:id="@+id/plusButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_gravity="center_vertical"
+                android:textSize="35dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnViewProductInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Product Info"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

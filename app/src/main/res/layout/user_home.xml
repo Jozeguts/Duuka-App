@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Home Text with Avatar -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="start|center_vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title="Home" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/avatar_icon"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Cart Icon -->
+        <ImageView
+            android:id="@+id/cartImageView"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/cart_icon"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Search Section -->
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Search"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"/>
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/search_icon"
+            android:scaleType="centerCrop"/>
+
+    </LinearLayout>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchLayout"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/gotoViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Item"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>
